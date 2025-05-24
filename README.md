@@ -27,7 +27,7 @@ Here are the first five errors. There are 16 in total.
 
 ### After
 
-Switching out `BeautifulSoup` for `TypedSoup` resolves the errors:
+Switching out `BeautifulSoup` for `TypedSoup` provides type knowledge to the checker and IDE:
 
 <p align="center">
   <img src="./after.jpg" width="75%" alt="After">
