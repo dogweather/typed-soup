@@ -4,6 +4,8 @@ A type-safe wrapper around BeautifulSoup and utilities for parsing HTML/XML with
 
 ## Motivation
 
+This is an example from real code.
+
 ### Before
 
 <p align="center">
