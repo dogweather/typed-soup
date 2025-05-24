@@ -6,9 +6,9 @@ A type-safe wrapper around BeautifulSoup and utilities for parsing HTML/XML with
 
 ### Before
 
-<div style="text-align: center">
-<img src="./before.jpg" width="75%" alt="Before" style="margin: 10px auto;">
-</div>
+<p align="center">
+  <img src="./before.jpg" width="75%" alt="Before">
+</p>
 
 Here are the first five errors. There are 16 in total.
 
@@ -29,9 +29,9 @@ Here are the first five errors. There are 16 in total.
 
 Changing one line of code to use `TypedSoup` instead of `BeautifulSoup` resolves the errors:
 
-<div style="text-align: center">
-<img src="./after.jpg" width="75%" alt="After" style="margin: 10px auto;">
-</div>
+<p align="center">
+  <img src="./after.jpg" width="75%" alt="After">
+</p>
 
 ## Installation
 
