@@ -17,7 +17,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
-]
+    ]
 keywords = ["beautifulsoup", "html", "parsing", "type-safe", "scrapy"]
 
 [project.urls]
@@ -36,3 +36,4 @@ packages = [{ include = "typed_soup" }]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"
+pytest-watch = "^4.2.0"
