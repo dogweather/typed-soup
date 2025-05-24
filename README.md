@@ -70,11 +70,11 @@ from bs4 import BeautifulSoup
 soup = TypedSoup(BeautifulSoup(html_content, "html.parser"))
 ```
 
-I'm adding functions as I need them. If you have a request, please open an issue.
 
 ## Supported Functions
 
-These are the ones that I needed for [a dozen spiders](https://github.com/public-law/open-gov-crawlers):
+I'm adding functions as I need them. If you have a request, please open an issue.
+ These are the ones that I needed for [a dozen spiders](https://github.com/public-law/open-gov-crawlers):
 
 - `find`
 - `find_all`
