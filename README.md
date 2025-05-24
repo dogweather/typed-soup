@@ -4,7 +4,7 @@ A type-safe wrapper around BeautifulSoup and utilities for parsing HTML/XML with
 
 ## Motivation
 
-This is an example from real code.
+This is an example [from production code](https://github.com/public-law/open-gov-crawlers/blob/d7ad31081a88cec0e48bd51e06a4d0cc6039abec/public_law/parsers/gbr/cpr_glossary.py#L128-L143).
 
 ### Before
 
