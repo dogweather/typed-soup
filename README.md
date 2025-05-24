@@ -1,6 +1,6 @@
 # typed-soup
 
-A type-safe wrapper around BeautifulSoup and utilities for parsing HTML/XML with robust return types and error handling. Extracted from [Open-Gov Crawlers](https://github.com/public-law/open-gov-crawlers).
+A type-safe wrapper around BeautifulSoup and utilities for parsing HTML. Extracted from [Open-Gov Crawlers](https://github.com/public-law/open-gov-crawlers).
 
 ## Motivation
 
