@@ -27,7 +27,7 @@ Here are the first five errors. There are 16 in total.
 
 ### After
 
-Changing one line of code to use `TypedSoup` instead of `BeautifulSoup` fixes all the errors:
+Changing one line of code to use `TypedSoup` instead of `BeautifulSoup` resolves the errors:
 
 <div style="text-align: center">
 <img src="./after.jpg" width="75%" alt="After" style="margin: 10px auto;">
@@ -40,6 +40,8 @@ pip install typed-soup
 ```
 
 ## Usage
+
+If you're using Scrapy, you can use the `from_response` function to create a `TypedSoup` object from a Scrapy response:
 
 ```python
 from typed_soup import from_response
@@ -59,7 +61,35 @@ for elem in elements:
     print(elem.get_text())
 ```
 
+Or, without Scrapy, you can explicity wrap a BeautifulSoup object in `TypedSoup`:
+
+```python
+from typed_soup import TypedSoup
+from bs4 import BeautifulSoup
+
+soup = TypedSoup(BeautifulSoup(html_content, "html.parser"))
+```
+
 I'm adding functions as I need them. If you have a request, please open an issue.
+
+## Current Functions Supported
+
+These are the ones that I needed for a dozen spiders:
+
+- `find`
+- `find_all`
+- `get_text`
+- `children`
+- `tag_name`
+- `parent`
+- `next_sibling`
+- `get_content_after_element`
+- `string`
+
+And then these help create a `TypedSoup` object:
+
+- `from_response`
+- `TypedSoup`
 
 ## License
 
