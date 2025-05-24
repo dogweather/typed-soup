@@ -5,13 +5,12 @@ name: Python package
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "*" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "*" ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -31,4 +30,4 @@ jobs:
         poetry install --no-root
     - name: Test with pytest
       run: |
-        poetry run pytest
+        PYTHONPATH=$PYTHONPATH:$(pwd) poetry run pytest tests/ -v
