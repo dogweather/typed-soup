@@ -1,6 +1,6 @@
 [project]
 name = "typed-soup"
-version = "0.1.0"
+version = "0.1.1"
 description = "A type-safe wrapper around BeautifulSoup and related HTML parsing utilities"
 authors = [{ name = "Robert Shecter", email = "robert@public.law" }]
 license = { text = "MIT" }
@@ -22,6 +22,10 @@ Homepage = "https://github.com/public-law/typed-soup"
 Documentation = "https://github.com/public-law/typed-soup#readme"
 Repository = "https://github.com/public-law/typed-soup.git"
 Issues = "https://github.com/public-law/typed-soup/issues"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "typed-soup"
