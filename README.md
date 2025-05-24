@@ -1,6 +1,6 @@
 # typed-soup
 
-A type-safe wrapper around BeautifulSoup and utilities for parsing HTML/XML with robust return types and error handling.
+A type-safe wrapper around BeautifulSoup and utilities for parsing HTML/XML with robust return types and error handling. Extracted from [Open-Gov Crawlers](https://github.com/public-law/open-gov-crawlers).
 
 ## Motivation
 
@@ -72,9 +72,9 @@ soup = TypedSoup(BeautifulSoup(html_content, "html.parser"))
 
 I'm adding functions as I need them. If you have a request, please open an issue.
 
-## Current Functions Supported
+## Supported Functions
 
-These are the ones that I needed for a dozen spiders:
+These are the ones that I needed for [a dozen spiders](https://github.com/public-law/open-gov-crawlers):
 
 - `find`
 - `find_all`
