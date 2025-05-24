@@ -58,7 +58,7 @@ if element:
     print(element.get_text())
 
 # Find all elements
-elements = soup.find_all("p")
+elements = soup("p")
 for elem in elements:
     print(elem.get_text())
 ```
@@ -80,6 +80,7 @@ I'm adding functions as I need them. If you have a request, please open an issue
 
 - `find`
 - `find_all`
+- `__call__` (implicit find_all, e.g. `soup("p")` - standard BeautifulSoup API)
 - `get_text`
 - `children`
 - `tag_name`

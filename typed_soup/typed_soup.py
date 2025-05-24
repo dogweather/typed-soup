@@ -55,6 +55,14 @@ class TypedSoup:
         """Allow using the wrapper in boolean contexts."""
         return bool(self._element)
 
+    def __call__(self, name: str, class_: Optional[str] = None, attrs: Optional[Dict[str, Any]] = None) -> List['TypedSoup']:
+        """Allow using the wrapper as a callable to find all elements.
+
+        This is a shorthand for find_all(), allowing syntax like:
+        elements = soup("p")  # equivalent to soup.find_all("p")
+        """
+        return self.find_all(name, class_=class_, attrs=attrs)
+
     def children(self) -> list['TypedSoup']:
         return [
             TypedSoup(child) for child in self._element.children
