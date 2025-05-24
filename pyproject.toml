@@ -1,6 +1,6 @@
 [project]
 name = "typed-soup"
-version = "0.1.4"
+version = "0.1.5"
 description = "A type-safe wrapper around BeautifulSoup and related HTML parsing utilities"
 authors = [{ name = "Robert Shecter", email = "robert@public.law" }]
 license = { text = "MIT" }
@@ -17,8 +17,25 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Typing :: Typed",
+    "Topic :: Text Processing :: Markup :: HTML",
+    "Topic :: Software Development :: Quality Assurance",
 ]
-keywords = ["beautifulsoup", "html", "parsing", "type-safe", "scrapy"]
+keywords = [
+    "beautifulsoup",
+    "html",
+    "parsing",
+    "type-safe",
+    "scrapy",
+    "type-hints",
+    "static-typing",
+    "mypy",
+    "pyright",
+    "web-scraping",
+    "html-parsing",
+    "xml-parsing",
+]
 
 [project.urls]
 Homepage = "https://github.com/public-law/typed-soup"
@@ -36,3 +53,5 @@ packages = [{ include = "typed_soup" }]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"
+pytest-watch = "^4.2.0"
+pyright = "^1.1.401"
