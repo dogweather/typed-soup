@@ -17,8 +17,25 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Typing :: Typed",
+    "Topic :: Text Processing :: Markup :: HTML",
+    "Topic :: Software Development :: Quality Assurance",
 ]
-keywords = ["beautifulsoup", "html", "parsing", "type-safe", "scrapy"]
+keywords = [
+    "beautifulsoup",
+    "html",
+    "parsing",
+    "type-safe",
+    "scrapy",
+    "type-hints",
+    "static-typing",
+    "mypy",
+    "pyright",
+    "web-scraping",
+    "html-parsing",
+    "xml-parsing",
+]
 
 [project.urls]
 Homepage = "https://github.com/public-law/typed-soup"
