@@ -41,6 +41,22 @@ Switching out `BeautifulSoup` for `TypedSoup` provides type knowledge to the che
 pip install typed-soup
 ```
 
+## Quick Start
+
+```python
+from typed_soup import TypedSoup
+from bs4 import BeautifulSoup
+
+# Create a type-safe soup object
+soup = TypedSoup(BeautifulSoup("<div>Hello <span>World</span></div>", "html.parser"))
+
+# Find elements with type safety
+element = soup.find("span")
+if element:
+    print(element.get_text())  # Type-safe: IDE knows this returns str
+```
+
+
 ## Usage
 
 If you're using Scrapy, you can use the `from_response` function to create a `TypedSoup` object from a Scrapy response:
@@ -93,6 +109,14 @@ And then these help create a `TypedSoup` object:
 
 - `from_response`
 - `TypedSoup`
+
+## Type Safety Benefits
+
+- All methods return properly typed results
+- No more `None` surprises - optional values are properly typed and described in the function signatures
+- IDE autocomplete support for all methods
+- Static type checking support with mypy/pyright
+- Runtime type validation for BeautifulSoup results
 
 ## License
 
