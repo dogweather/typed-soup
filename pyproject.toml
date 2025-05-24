@@ -1,0 +1,20 @@
+[project]
+name = "typed-soup"
+version = "0.1.0"
+description = "A type-safe wrapper around BeautifulSoup and related HTML parsing utilities"
+authors = [{ name = "Robert Shecter", email = "robert@public.law" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["beautifulsoup4", "scrapy", "toolz"]
+
+[project.urls]
+Homepage = "https://github.com/public-law/typed-soup"
+
+[tool.poetry]
+name = "typed-soup"
+packages = [{ include = "typed_soup" }]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
