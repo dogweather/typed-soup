@@ -32,7 +32,7 @@ Here are the first five errors. There are 16 in total.
 Switching out `BeautifulSoup` for `TypedSoup` provides type knowledge to the checker and IDE:
 
 <p align="center">
-  <img src="./after.jpg" width="75%" alt="After">
+  <img src="https://raw.githubusercontent.com/public-law/typed-soup/refs/heads/master/after.jpg" width="75%" alt="After">
 </p>
 
 ## Installation
