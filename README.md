@@ -27,7 +27,7 @@ Here are the first five errors. There are 16 in total.
 
 ### After
 
-Changing one line of code to use `TypedSoup` instead of `BeautifulSoup` resolves the errors:
+Switching out `BeautifulSoup` for `TypedSoup` resolves the errors:
 
 <p align="center">
   <img src="./after.jpg" width="75%" alt="After">
@@ -61,7 +61,7 @@ for elem in elements:
     print(elem.get_text())
 ```
 
-Or, without Scrapy, you can explicity wrap a BeautifulSoup object in `TypedSoup`:
+Or, without Scrapy, you can explicity wrap a `BeautifulSoup` object in `TypedSoup`:
 
 ```python
 from typed_soup import TypedSoup
