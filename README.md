@@ -1,12 +1,16 @@
 # typed-soup
 
-A type-safe wrapper around BeautifulSoup.
+A type-safe wrapper around BeautifulSoup and utilities for parsing HTML/XML with robust return types and error handling.
 
 ## Motivation
 
 ### Before
 
-![Before](./before.jpg)
+<div style="text-align: center">
+<img src="./before.jpg" width="75%" alt="Before">
+</div>
+
+Here are the errors:
 
 ```
   error: Type of "rows" is partially unknown
@@ -49,8 +53,11 @@ A type-safe wrapper around BeautifulSoup.
 
 ### After
 
-![After](./after.jpg)
+Changing one line of code to use `TypedSoup` instead of `BeautifulSoup` fixes all the errors:
 
+<div style="text-align: center">
+<img src="./after.jpg" width="75%" alt="After">
+</div>
 
 ## Installation
 
@@ -77,6 +84,8 @@ elements = soup.find_all("p")
 for elem in elements:
     print(elem.get_text())
 ```
+
+I'm adding functions as I need them. If you have a request, please open an issue.
 
 ## License
 
