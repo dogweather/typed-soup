@@ -9,7 +9,7 @@ This is an example [from production code](https://github.com/public-law/open-gov
 ### Before
 
 <p align="center">
-  <img src="./before.jpg" width="75%" alt="Before">
+  <img src="https://raw.githubusercontent.com/public-law/typed-soup/master/before.jpg" width="75%" alt="Before">
 </p>
 
 Here are the first five errors. There are 16 in total.
