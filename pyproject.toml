@@ -5,7 +5,7 @@ description = "A type-safe wrapper around BeautifulSoup and related HTML parsing
 authors = [{ name = "Robert Shecter", email = "robert@public.law" }]
 license = { text = "MIT" }
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = ["beautifulsoup4", "scrapy", "toolz"]
 classifiers = [
     "Development Status :: 4 - Beta",
